@@ -4,5 +4,6 @@ function getBerlinClockTime(timestamp) {
     const minutes = date.getUTCMinutes();
     const seconds = date.getUTCSeconds();
 
+    return hours;
     
 }    
