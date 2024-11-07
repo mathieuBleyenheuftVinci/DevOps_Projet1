@@ -1,7 +1,8 @@
-function main(){
-    const timeStampInSeconds = Math.floor(Date.now() / 1000);
-    console.log('TimeStamp actuel en secondes :' + timeStampInSeconds);
+function getBerlinClockTime(timestamp) {
+    const date = new Date(timestamp);
+    const hours = date.getUTCHours();
+    const minutes = date.getUTCMinutes();
+    const seconds = date.getUTCSeconds();
 
     
-}
-return main();
+}    
