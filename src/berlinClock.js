@@ -16,4 +16,8 @@ function gestSingleMinutesRow(minutes) {
     return row
 }
 
+function get5MinutesRow(minutes){
+    return 'OOOOOOOOOOO'
+}
+
 module.exports = {gestSingleMinutesRow}
