@@ -1,4 +1,4 @@
-const { gestSingleMinutesRow, get5MinutesRow, getSingleHourRow, get5HoursRow, getSecondsRow } = require('../src/berlinClock');
+const { gestSingleMinutesRow, get5MinutesRow, getSingleHourRow, get5HoursRow, getSecondsRow, getBerlinClockTime } = require('../src/berlinClock');
 
 describe("Main should returns hours, minutes and seconds of the actual time",() => {
 
@@ -38,6 +38,18 @@ describe("Main should returns hours, minutes and seconds of the actual time",() 
         expect(getSecondsRow(2)).toBe('Y');
         expect(getSecondsRow(3)).toBe('O');
         expect(getSecondsRow(4)).toBe('Y');
+    });
+
+    it("should return the correct Berlin Clock time", () => {
+        const timestamp = new  Date('2024-11-10T10:55:38Z').getTime();
+        const berlinClockTime = getBerlinClockTime(timestamp);
+        expect(berlinClockTime).toEqual({
+            seconds: 'Y',
+            fiveHoursRow: 'RROO',
+            singleHoursRow: 'OOOO',
+            fiveMinutesRow: 'YYRYYRYYRYY',
+            singleMinutesRow: 'OOOO'
+        });
     });
 });
 

@@ -57,4 +57,4 @@ function getSecondsRow(seconds){
 }
 
 
-module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow, getSecondsRow };
+module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow, getSecondsRow, getBerlinClockTime };
