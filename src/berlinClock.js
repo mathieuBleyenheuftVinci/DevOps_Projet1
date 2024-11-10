@@ -26,4 +26,4 @@ function get5MinutesRow(minutes) {
     return row;
 }
 
-module.exports = { gestSingleMinutesRow, get5MinutesRow };
+module.exports = { gestSingleMinutesRow, get5MinutesRow }
