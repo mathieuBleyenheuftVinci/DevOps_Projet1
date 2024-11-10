@@ -20,4 +20,4 @@ function get5MinutesRow(minutes){
     return 'OOOOOOOOOOO'
 }
 
-module.exports = {gestSingleMinutesRow}
+module.exports = {gestSingleMinutesRow, get5MinutesRow}
