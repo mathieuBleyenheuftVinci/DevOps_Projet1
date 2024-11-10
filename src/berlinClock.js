@@ -30,7 +30,7 @@ function get5MinutesRow(minutes) {
 }
 
 function getSingleHourRow(hours) {
-    return  'O O O O ';
+    return  'OOOO ';
 }
 
 module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow };
