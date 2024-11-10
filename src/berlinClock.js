@@ -4,6 +4,12 @@ function getBerlinClockTime(timestamp) {
     const minutes = date.getUTCMinutes();
     const seconds = date.getUTCSeconds();
 
-    return hours;
+   
     
 }    
+
+function gestSingleMinutesRow(minutes) {
+    return 'YYYY'
+}
+
+module.exports = {gestSingleMinutesRow}
