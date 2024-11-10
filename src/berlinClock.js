@@ -33,7 +33,11 @@ function getSingleHourRow(hours) {
         row += (i < hours % 5) ? 'R' : 'O';
     }
     return row;
+};
+
+function get5HoursRow(hours) {
+    return 'OOOO';
 }
 
 
-module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow };
+module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow };

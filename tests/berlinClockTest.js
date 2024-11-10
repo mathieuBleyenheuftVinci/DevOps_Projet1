@@ -1,4 +1,4 @@
-const { gestSingleMinutesRow, get5MinutesRow, getSingleHourRow } = require('../src/berlinClock');
+const { gestSingleMinutesRow, get5MinutesRow, getSingleHourRow, get5HoursRow } = require('../src/berlinClock');
 
 describe("Main should returns hours, minutes and seconds of the actual time",() => {
 
