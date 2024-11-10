@@ -27,7 +27,13 @@ function get5MinutesRow(minutes) {
 }
 
 function getSingleHourRow(hours) {
-    return  'OOOO ';
+    let row = '';
+
+    for (let i = 0; i < 4; i++) {
+        row += (i < hours % 5) ? 'R' : 'O';
+    }
+    return row;
 }
+
 
 module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow };
