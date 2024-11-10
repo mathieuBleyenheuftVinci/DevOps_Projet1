@@ -9,7 +9,11 @@ function getBerlinClockTime(timestamp) {
 }    
 
 function gestSingleMinutesRow(minutes) {
-    return 'YYYY'
+    let row = '';
+    for(let i = 0; i < 4; i++){
+        row += (i < minutes % 5) ? 'Y' : 'O';
+    }
+    return row
 }
 
 module.exports = {gestSingleMinutesRow}
