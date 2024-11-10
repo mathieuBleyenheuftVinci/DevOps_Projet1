@@ -15,6 +15,6 @@ describe("Main should returns hours, minutes and seconds of the actual time",() 
         expect(get5MinutesRow(5)).toBe('YOOOOOOOOOO');
         expect(get5MinutesRow(15)).toBe('YYROOOOOOOO');
         expect(get5MinutesRow(30)).toBe('YYRYYROOOOO');
-    })
+    });
 });
 

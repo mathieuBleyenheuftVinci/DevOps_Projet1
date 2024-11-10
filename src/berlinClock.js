@@ -3,9 +3,6 @@ function getBerlinClockTime(timestamp) {
     const hours = date.getUTCHours();
     const minutes = date.getUTCMinutes();
     const seconds = date.getUTCSeconds();
-
-
-
 }
 
 function gestSingleMinutesRow(minutes) {
@@ -13,7 +10,7 @@ function gestSingleMinutesRow(minutes) {
     for (let i = 0; i < 4; i++) {
         row += (i < minutes % 5) ? 'Y' : 'O';
     }
-    return row
+    return row;
 }
 
 function get5MinutesRow(minutes) {
@@ -29,4 +26,4 @@ function get5MinutesRow(minutes) {
     return row;
 }
 
-module.exports = { gestSingleMinutesRow, get5MinutesRow }
+module.exports = { gestSingleMinutesRow, get5MinutesRow };
