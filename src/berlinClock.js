@@ -9,17 +9,17 @@ function getBerlinClockTime(timestamp) {
         fiveHoursRow: get5HoursRow(hours),
         singleHoursRow: getSingleHourRow(hours),
         fiveMinutesRow: get5MinutesRow(minutes),
-        singleMinutesRow: gestSingleMinutesRow(minutes)
+        singleMinutesRow: getSingleMinutesRow(minutes)
     };
-}
+};
 
-function gestSingleMinutesRow(minutes) {
+function getSingleMinutesRow(minutes) {
     let row = '';
     for (let i = 0; i < 4; i++) {
         row += (i < minutes % 5) ? 'Y' : 'O';
-    }
+    };
     return row;
-}
+};
 
 function get5MinutesRow(minutes) {
     let row = '';
@@ -29,17 +29,17 @@ function get5MinutesRow(minutes) {
             row += (i + 1) % 3 === 0 ? 'R' : 'Y';
         } else {
             row += 'O';
-        }
-    }
+        };
+    };
     return row;
-}
+};
 
 function getSingleHourRow(hours) {
     let row = '';
 
     for (let i = 0; i < 4; i++) {
         row += (i < hours % 5) ? 'R' : 'O';
-    }
+    };
     return row;
 };
 
@@ -48,9 +48,9 @@ function get5HoursRow(hours) {
 
     for (let i = 0; i < 4; i++) {
         row += (i < Math.floor(hours / 5)) ? 'R' : 'O';
-    }
+    };
     return row;
-}
+};
 
 function getSecondsRow(seconds){
     let row = '';
@@ -59,10 +59,10 @@ function getSecondsRow(seconds){
         row += 'Y';
     } else {
         row += 'O';
-    }
+    };
 
     return row;
-}
+};
 
 
-module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow, getSecondsRow, getBerlinClockTime };
+module.exports = { getSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow, getSecondsRow, getBerlinClockTime };

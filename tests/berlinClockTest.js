@@ -1,13 +1,13 @@
-const { gestSingleMinutesRow, get5MinutesRow, getSingleHourRow, get5HoursRow, getSecondsRow, getBerlinClockTime } = require('../src/berlinClock');
+const { getSingleMinutesRow, get5MinutesRow, getSingleHourRow, get5HoursRow, getSecondsRow, getBerlinClockTime } = require('../src/berlinClock');
 
 describe("Main should returns hours, minutes and seconds of the actual time",() => {
 
     it("should return correct lamps for the single minutes row", () => {
-        expect(gestSingleMinutesRow(0)).toBe('OOOO');
-        expect(gestSingleMinutesRow(1)).toBe('YOOO');
-        expect(gestSingleMinutesRow(2)).toBe('YYOO');
-        expect(gestSingleMinutesRow(3)).toBe('YYYO');
-        expect(gestSingleMinutesRow(4)).toBe('YYYY');
+        expect(getSingleMinutesRow(0)).toBe('OOOO');
+        expect(getSingleMinutesRow(1)).toBe('YOOO');
+        expect(getSingleMinutesRow(2)).toBe('YYOO');
+        expect(getSingleMinutesRow(3)).toBe('YYYO');
+        expect(getSingleMinutesRow(4)).toBe('YYYY');
     });
 
     it("should return correct lamps for the five minutes row", () => {
