@@ -44,5 +44,9 @@ function get5HoursRow(hours) {
     return row;
 }
 
+function getSecondsRow(seconds){
+    return 'Y';
+}
 
-module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow };
+
+module.exports = { gestSingleMinutesRow, get5MinutesRow , getSingleHourRow, get5HoursRow, getSecondsRow };
