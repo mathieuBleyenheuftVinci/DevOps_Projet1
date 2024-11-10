@@ -3,6 +3,14 @@ function getBerlinClockTime(timestamp) {
     const hours = date.getUTCHours();
     const minutes = date.getUTCMinutes();
     const seconds = date.getUTCSeconds();
+
+    return {
+        seconds: 'Y',
+        fiveHoursRow: 'RROO',
+        singleHoursRow: 'OOOO',
+        fiveMinutesRow: 'YYRYYRYYRYY',
+        singleMinutesRow: 'OOOO'
+    }
 }
 
 function gestSingleMinutesRow(minutes) {
