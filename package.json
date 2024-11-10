@@ -1,8 +1,15 @@
 {
-  "scripts": {
-    "test": "jasmine"
-  },
+  "name": "devopsprojet",
+  "version": "1.0.0",
+  "description": "Berlin Clock",
+  "main": "src/main.js",
   "dependencies": {
     "jasmine": "^5.4.0"
-  }
+  },
+  "scripts": {
+    "test": "jasmine",
+    "start": "node src/main.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
