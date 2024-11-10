@@ -36,7 +36,12 @@ function getSingleHourRow(hours) {
 };
 
 function get5HoursRow(hours) {
-    return 'OOOO';
+    let row = '';
+
+    for (let i = 0; i < 4; i++) {
+        row += (i < Math.floor(hours / 5)) ? 'R' : 'O';
+    }
+    return row;
 }
 
 
