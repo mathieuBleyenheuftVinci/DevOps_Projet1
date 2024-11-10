@@ -5,12 +5,12 @@ function getBerlinClockTime(timestamp) {
     const seconds = date.getUTCSeconds();
 
     return {
-        seconds: 'Y',
-        fiveHoursRow: 'RROO',
-        singleHoursRow: 'OOOO',
-        fiveMinutesRow: 'YYRYYRYYRYY',
-        singleMinutesRow: 'OOOO'
-    }
+        seconds: getSecondsRow(seconds),
+        fiveHoursRow: get5HoursRow(hours),
+        singleHoursRow: getSingleHourRow(hours),
+        fiveMinutesRow: get5MinutesRow(minutes),
+        singleMinutesRow: gestSingleMinutesRow(minutes)
+    };
 }
 
 function gestSingleMinutesRow(minutes) {
