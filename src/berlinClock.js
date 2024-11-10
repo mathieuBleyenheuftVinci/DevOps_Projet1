@@ -45,7 +45,15 @@ function get5HoursRow(hours) {
 }
 
 function getSecondsRow(seconds){
-    return 'Y';
+    let row = '';
+
+    if (seconds % 2 === 0) {
+        row += 'Y';
+    } else {
+        row += 'O';
+    }
+
+    return row;
 }
 
 

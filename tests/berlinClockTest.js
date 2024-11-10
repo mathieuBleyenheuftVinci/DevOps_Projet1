@@ -36,6 +36,8 @@ describe("Main should returns hours, minutes and seconds of the actual time",() 
     it("should return correct lamps for the seconds row", () => {
         expect(getSecondsRow(1)).toBe('O');
         expect(getSecondsRow(2)).toBe('Y');
+        expect(getSecondsRow(3)).toBe('O');
+        expect(getSecondsRow(4)).toBe('Y');
     });
 });
 
