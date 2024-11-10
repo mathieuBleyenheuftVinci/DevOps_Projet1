@@ -24,5 +24,13 @@ describe("Main should returns hours, minutes and seconds of the actual time",() 
         expect(getSingleHourRow(3)).toBe('RRRO');
         expect(getSingleHourRow(4)).toBe('RRRR');
     });
+
+    it("should return correct lamps for the five hours row", () => {
+        expect(get5HoursRow(0)).toBe('OOOO');
+        expect(get5HoursRow(5)).toBe('ROOO');
+        expect(get5HoursRow(10)).toBe('RROO');
+        expect(get5HoursRow(15)).toBe('RRRO');
+        expect(get5HoursRow(20)).toBe('RRRR');
+    });
 });
 
