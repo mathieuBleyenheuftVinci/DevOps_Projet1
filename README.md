@@ -7,3 +7,6 @@ Participants :  - Bleyenheuft Mathieu
 O = OFF
 Y = YELLOW
 R = RED
+
+To start the test : npm test
+To start the Berlin Clock : npm start
